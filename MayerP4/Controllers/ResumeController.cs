@@ -7,9 +7,11 @@ using MayerP4.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MayerP4.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MayerP4.Controllers
 {
+    [Authorize]
     public class ResumeController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,6 +21,7 @@ namespace MayerP4.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         // GET: Resume
         public ActionResult Index()
         {
@@ -31,6 +34,7 @@ namespace MayerP4.Controllers
             return View(vm);
         }
 
+        [AllowAnonymous]
         // GET: Resume/Details/5
         public ActionResult Details(int id)
         {
@@ -67,6 +71,7 @@ namespace MayerP4.Controllers
         }
 
         // POST: Resume/Edit/5
+        [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
