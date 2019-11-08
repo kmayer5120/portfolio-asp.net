@@ -19,6 +19,25 @@ namespace MayerP4.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("MayerP4.Models.Education", b =>
+                {
+                    b.Property<int>("EducationID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Degree");
+
+                    b.Property<DateTime>("End");
+
+                    b.Property<string>("School");
+
+                    b.Property<DateTime>("Start");
+
+                    b.HasKey("EducationID");
+
+                    b.ToTable("Educations");
+                });
+
             modelBuilder.Entity("MayerP4.Models.Experience", b =>
                 {
                     b.Property<int>("ExperienceID")
@@ -36,6 +55,21 @@ namespace MayerP4.Data.Migrations
                     b.HasKey("ExperienceID");
 
                     b.ToTable("Experiences");
+                });
+
+            modelBuilder.Entity("MayerP4.Models.Skill", b =>
+                {
+                    b.Property<int>("SkillID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("SkillID");
+
+                    b.ToTable("Skills");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
