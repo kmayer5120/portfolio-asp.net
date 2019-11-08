@@ -69,3 +69,8 @@ C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\MayerP4.pdb
 C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\MayerP4.csproj.CopyComplete
 C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Resume\Index.g.cshtml.cs
+C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Create.g.cshtml.cs
+C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Delete.g.cshtml.cs
+C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Details.g.cshtml.cs
+C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Edit.g.cshtml.cs
+C:\Users\Kyle\Source\Repos\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Index.g.cshtml.cs
