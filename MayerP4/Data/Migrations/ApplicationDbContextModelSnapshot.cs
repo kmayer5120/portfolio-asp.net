@@ -19,6 +19,23 @@ namespace MayerP4.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("MayerP4.Models.Blog", b =>
+                {
+                    b.Property<int>("BlogID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Post");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("BlogID");
+
+                    b.ToTable("Blogs");
+                });
+
             modelBuilder.Entity("MayerP4.Models.Education", b =>
                 {
                     b.Property<int>("EducationID")

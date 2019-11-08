@@ -17,5 +17,6 @@ namespace MayerP4.Data
         public DbSet<Experience> Experiences { get; set; }
         public DbSet<Education> Educations { get; set; }
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
     }
 }
