@@ -12595,11 +12595,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kyle\\Source\\Repos\\MayerP4\\MayerP4\\MayerP4.csproj",
+      "projectUniqueName": "D:\\MEGA\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj",
       "projectName": "MayerP4",
-      "projectPath": "C:\\Users\\Kyle\\Source\\Repos\\MayerP4\\MayerP4\\MayerP4.csproj",
+      "projectPath": "D:\\MEGA\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj",
       "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kyle\\Source\\Repos\\MayerP4\\MayerP4\\obj\\",
+      "outputPath": "D:\\MEGA\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
