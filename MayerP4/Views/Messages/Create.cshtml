@@ -4,12 +4,13 @@
     ViewData["Title"] = "Contact";
 }
 
-<h2>Contact</h2>
+<h2><i class="fas fa-envelope"></i> Contact Kyle</h2>
 
 <h4>Your message:</h4>
+
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -29,11 +30,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="Text" class="control-label"></label>
-                <input asp-for="Text" class="form-control" />
+                <textarea rows="20" asp-for="Text" class="form-control"></textarea>
                 <span asp-validation-for="Text" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Send Email" class="btn btn-default" />
             </div>
         </form>
     </div>

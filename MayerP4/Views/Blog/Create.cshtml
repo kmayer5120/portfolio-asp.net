@@ -1,15 +1,14 @@
 ﻿@model MayerP4.Models.Blog
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Blog Post";
 }
 
-<h2>Create</h2>
+<h2><i class="fas fa-feather-alt"></i> Create a new blog post</h2>
 
-<h4>Blog</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -19,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Post" class="control-label"></label>
-                <input asp-for="Post" class="form-control" />
+                <textarea rows="30" asp-for="Post" class="form-control" ></textarea>
                 <span asp-validation-for="Post" class="text-danger"></span>
             </div>
             <div class="form-group">
