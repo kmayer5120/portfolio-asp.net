@@ -26,7 +26,7 @@ namespace MayerP4.Services
                 Port = 587,
                 EnableSsl = true,
                 UseDefaultCredentials = false,
-                Credentials = new System.Net.NetworkCredential("yourid", "yourpassword")
+                Credentials = new System.Net.NetworkCredential("kyle.mayer.testing.email@gmail.com", "!This1Is2For3Testing4Purposes5!")
             };
 
             using (var msg = new System.Net.Mail.MailMessage(from, recipients[0], subject, content))

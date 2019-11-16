@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MayerP4.Data;
 using MayerP4.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MayerP4.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class MessagesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -44,6 +46,7 @@ namespace MayerP4.Controllers
         }
 
         // GET: Messages/Create
+        [AllowAnonymous]
         public IActionResult Create()
         {
             return View();
@@ -53,16 +56,30 @@ namespace MayerP4.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Email,Subject,Text")] Message message)
+        public async Task<IActionResult> Create([Bind("Id,Name,Email,Subject,Text")] Message contact)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(message);
+                _context.Add(contact);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                //Send email notification
+                string subject = "New message from " + contact.Name;
+                string message = "<p>You received a new message from " + contact.Name + " " + contact.Email + " on " + DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss") + ":</p><p>" + contact.Text + "</p>";
+                Services.Email.SendGmail(subject, message, new string[] { "kyle.mayer.testing.email@gmail.com" }, "kyle.mayer.testing.email@gmail.com");
+
+                return RedirectToAction(nameof(Sent));
+
             }
-            return View(message);
+            return View(contact);
+        }
+
+        [AllowAnonymous]
+        public async Task<IActionResult> Sent()
+        {
+            return View();
         }
 
         // GET: Messages/Edit/5
