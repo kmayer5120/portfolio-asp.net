@@ -5,31 +5,32 @@
 }
 
 <h2>Blog</h2>
-@if (User.IsInRole("admin"))
-{
-    <p>
-        <a asp-action="Create">Create Blog Post</a>
-    </p>
-}
-<div class="row">
+<div class="container">
 
+    @if (User.IsInRole("admin"))
+    {
+        <p>
+            <a asp-action="Create">Create Blog Post</a>
+        </p>
+    }
+
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <h3>
+                @Html.DisplayFor(modelItem => item.Title)
+            </h3>
+        </div>
+
+        <div class="row well">
+
+            <h4>
+                @Html.DisplayNameFor(model => model.Description):
+                @Html.DisplayFor(modelItem => item.Description)
+            </h4>
+            <a asp-action="Details" asp-route-id="@item.BlogID">Read more</a>
+        </div>
+
+    }
 
 </div>
-@foreach (var item in Model)
-{
-    <div class="row">
-        <h3>
-            @Html.DisplayFor(modelItem => item.Title)
-        </h3>
-    </div>
-
-    <div class="row">
-
-        <h4>
-            @Html.DisplayNameFor(model => model.Description):
-            @Html.DisplayFor(modelItem => item.Description)
-        </h4>
-        <a asp-action="Details" asp-route-id="@item.BlogID">Read more</a>
-    </div>
-
-}
