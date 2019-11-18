@@ -14,19 +14,31 @@
             @foreach (var skill in Model.Skills)
             {
                 <li>
-                    @skill
+                    <b>@skill.Title:</b> @skill.Description
                 </li>
             }
         </ul>
     </div>
     <div class="col-md-12">
+
         <h1>Experience</h1>
         <ul>
             @foreach (var experience in Model.Experiences)
             {
                 <li>
                     @experience
+
+                    <a asp-action="Edit" asp-route-id="@experience.ExperienceID">Edit</a>
+                    <a asp-action="Details" asp-route-id="@experience.ExperienceID">Details</a>
+                    <a asp-action="Delete" asp-route-id="@experience.ExperienceID">Delete</a>
+                    @if (User.IsInRole("admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@experience.ExperienceID">Edit</a>
+                        <a asp-action="Details" asp-route-id="@experience.ExperienceID">Details</a>
+                        <a asp-action="Delete" asp-route-id="@experience.ExperienceID">Delete</a>
+                    }
                 </li>
+
             }
         </ul>
     </div>

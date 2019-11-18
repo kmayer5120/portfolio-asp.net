@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace MayerP4.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "admin")]
     public class ResumeController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -26,7 +26,8 @@ namespace MayerP4.Controllers
         public ActionResult Index()
         {
             var vm = new ResumeViewModel();
-            vm.Intro = "some text for an intro"; //can be hardcoded
+            vm.Intro = "My current objective is to secure a software engineering internship to gain industry experience. " +
+                    "I am eager to learn from others while working on a team.";
             vm.Skills = _context.Skills.ToList();
             vm.Experiences = _context.Experiences.ToList();
             vm.Educations = _context.Educations.ToList();

@@ -16,7 +16,9 @@ namespace MayerP4.Models
         public List<Education> Educations { get; set; }
         public string Conclusion { get; set; }
 
-        public ResumeViewModel() {}
+        public ResumeViewModel()
+        {
+        }
 
     }
 }
