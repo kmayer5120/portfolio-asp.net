@@ -17,6 +17,7 @@ namespace MayerP4.Models
         public string Email { get; set; }
         [Required]
         public string Subject { get; set; }
+        [Display(Name="Message Body")]
         [Required]
         public string Text { get; set; }
     }

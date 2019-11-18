@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MEGA\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj": {}
+    "C:\\Users\\kmaye\\OneDrive\\Documents\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj": {}
   },
   "projects": {
-    "D:\\MEGA\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj": {
+    "C:\\Users\\kmaye\\OneDrive\\Documents\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MEGA\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj",
+        "projectUniqueName": "C:\\Users\\kmaye\\OneDrive\\Documents\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj",
         "projectName": "MayerP4",
-        "projectPath": "D:\\MEGA\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj",
-        "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
-        "outputPath": "D:\\MEGA\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\obj\\",
+        "projectPath": "C:\\Users\\kmaye\\OneDrive\\Documents\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\MayerP4.csproj",
+        "packagesPath": "C:\\Users\\kmaye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kmaye\\OneDrive\\Documents\\cis\\cis_2284\\Programs\\MayerP4\\MayerP4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kmaye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,7 +53,6 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true

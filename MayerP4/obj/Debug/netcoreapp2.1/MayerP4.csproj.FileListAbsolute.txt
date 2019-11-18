@@ -161,3 +161,8 @@ D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\View
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Details.g.cshtml.cs
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Index.g.cshtml.cs
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Sent.g.cshtml.cs
+C:\Users\kmaye\OneDrive\Documents\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Create.g.cshtml.cs
+C:\Users\kmaye\OneDrive\Documents\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Delete.g.cshtml.cs
+C:\Users\kmaye\OneDrive\Documents\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Details.g.cshtml.cs
+C:\Users\kmaye\OneDrive\Documents\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Index.g.cshtml.cs
+C:\Users\kmaye\OneDrive\Documents\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Sent.g.cshtml.cs
