@@ -1,4 +1,6 @@
 ﻿@model MayerP4.Models.ResumeViewModel
+@using MayerP4.Controllers
+
 @{
     ViewData["Title"] = "Resume";
 }
@@ -8,35 +10,36 @@
 <p>@Html.DisplayFor(model => model.Intro)</p>
 
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
         <h1>Skills</h1>
+        @if (User.IsInRole("admin"))
+        {
+            @Html.ActionLink("Edit", "Index", "Skills")
+        }
         <ul>
             @foreach (var skill in Model.Skills)
             {
                 <li>
                     <b>@skill.Title:</b> @skill.Description
+                    <hr />
+
                 </li>
             }
         </ul>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-6">
 
         <h1>Experience</h1>
+        @if (User.IsInRole("admin"))
+        {
+            @Html.ActionLink("Edit", "Index", "Experiences")
+        }
+
         <ul>
             @foreach (var experience in Model.Experiences)
             {
                 <li>
-                    @experience
-
-                    <a asp-action="Edit" asp-route-id="@experience.ExperienceID">Edit</a>
-                    <a asp-action="Details" asp-route-id="@experience.ExperienceID">Details</a>
-                    <a asp-action="Delete" asp-route-id="@experience.ExperienceID">Delete</a>
-                    @if (User.IsInRole("admin"))
-                    {
-                        <a asp-action="Edit" asp-route-id="@experience.ExperienceID">Edit</a>
-                        <a asp-action="Details" asp-route-id="@experience.ExperienceID">Details</a>
-                        <a asp-action="Delete" asp-route-id="@experience.ExperienceID">Delete</a>
-                    }
+                    <p>@experience.Title: @experience.Description </p>
                 </li>
 
             }
@@ -44,6 +47,10 @@
     </div>
     <div class="col-md-12">
         <h1>Education</h1>
+        @if (User.IsInRole("admin"))
+        {
+            @Html.ActionLink("Edit", "Index", "Educations")
+        }
         <ul>
             @foreach (var education in Model.Educations)
             {
