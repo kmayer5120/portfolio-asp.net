@@ -21,13 +21,13 @@ namespace MayerP4.Controllers
             _context = context;
         }
 
-        // GET: Messages
+        // GET: Contacts
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Messages.ToListAsync());
+            return View(await _context.Contacts.ToListAsync());
         }
 
-        // GET: Messages/Details/5
+        // GET: Contacts/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -35,7 +35,7 @@ namespace MayerP4.Controllers
                 return NotFound();
             }
 
-            var message = await _context.Messages
+            var message = await _context.Contacts
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (message == null)
             {
@@ -45,20 +45,20 @@ namespace MayerP4.Controllers
             return View(message);
         }
 
-        // GET: Messages/Create
+        // GET: Contacts/Create
         [AllowAnonymous]
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Messages/Create
+        // POST: Contacts/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Email,Subject,Text")] Message contact)
+        public async Task<IActionResult> Create([Bind("Id,Name,Email,Subject,Text")] Contact contact)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace MayerP4.Controllers
             return View();
         }
 
-        // GET: Messages/Edit/5
+        // GET: Contacts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -90,7 +90,7 @@ namespace MayerP4.Controllers
                 return NotFound();
             }
 
-            var message = await _context.Messages.FindAsync(id);
+            var message = await _context.Contacts.FindAsync(id);
             if (message == null)
             {
                 return NotFound();
@@ -98,12 +98,12 @@ namespace MayerP4.Controllers
             return View(message);
         }
 
-        // POST: Messages/Edit/5
+        // POST: Contacts/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Email,Subject,Text")] Message message)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Email,Subject,Text")] Contact message)
         {
             if (id != message.Id)
             {
@@ -133,7 +133,7 @@ namespace MayerP4.Controllers
             return View(message);
         }
 
-        // GET: Messages/Delete/5
+        // GET: Contacts/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -141,7 +141,7 @@ namespace MayerP4.Controllers
                 return NotFound();
             }
 
-            var message = await _context.Messages
+            var message = await _context.Contacts
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (message == null)
             {
@@ -151,20 +151,20 @@ namespace MayerP4.Controllers
             return View(message);
         }
 
-        // POST: Messages/Delete/5
+        // POST: Contacts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var message = await _context.Messages.FindAsync(id);
-            _context.Messages.Remove(message);
+            var message = await _context.Contacts.FindAsync(id);
+            _context.Contacts.Remove(message);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool MessageExists(int id)
         {
-            return _context.Messages.Any(e => e.Id == id);
+            return _context.Contacts.Any(e => e.Id == id);
         }
     }
 }
