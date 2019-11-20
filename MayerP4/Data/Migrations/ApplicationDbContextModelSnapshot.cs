@@ -36,6 +36,44 @@ namespace MayerP4.Data.Migrations
                     b.ToTable("Blogs");
                 });
 
+            modelBuilder.Entity("MayerP4.Models.Contact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .IsRequired();
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(20);
+
+                    b.Property<bool>("IsGeneralMessage");
+
+                    b.Property<bool>("IsPhoneApp");
+
+                    b.Property<bool>("IsQuota");
+
+                    b.Property<bool>("IsWebApp");
+
+                    b.Property<bool>("IsWindowsApp");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(20);
+
+                    b.Property<string>("Subject")
+                        .IsRequired();
+
+                    b.Property<string>("Text")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Contacts");
+                });
+
             modelBuilder.Entity("MayerP4.Models.Education", b =>
                 {
                     b.Property<int>("EducationID")

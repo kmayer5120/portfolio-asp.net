@@ -19,5 +19,6 @@ namespace MayerP4.Data
         public DbSet<Skill> Skills { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
     }
 }
