@@ -10,7 +10,7 @@
 <p>@Html.DisplayFor(model => model.Intro)</p>
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
         <h1>Skills</h1>
         @if (User.IsInRole("admin"))
         {
@@ -27,7 +27,7 @@
             }
         </ul>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-12">
 
         <h1>Experience</h1>
         @if (User.IsInRole("admin"))
