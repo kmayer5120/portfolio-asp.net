@@ -58,7 +58,7 @@ namespace MayerP4.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Email,Subject,Text")] Contact contact)
+        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Email,Subject,Text")] Contact contact)
         {
             if (ModelState.IsValid)
             {

@@ -191,3 +191,8 @@ D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\View
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Skills\Details.g.cshtml.cs
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Skills\Edit.g.cshtml.cs
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Skills\Index.g.cshtml.cs
+D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Create.g.cshtml.cs
+D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Delete.g.cshtml.cs
+D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Details.g.cshtml.cs
+D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Edit.g.cshtml.cs
+D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Index.g.cshtml.cs

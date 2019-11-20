@@ -18,6 +18,8 @@ namespace MayerP4.Data
                 // Password is set with the following at the command line:
                 // dotnet user-secrets set SeedUserPW <pw>
                 // The admin user can do anything
+                // Username: admin@aserver.net
+                // Password: AdminPassword!1234
 
                 var adminID = await CreateUser(serviceProvider, testUserPw, "admin@aserver.net");
                 await CreateRole(serviceProvider, "admin");
