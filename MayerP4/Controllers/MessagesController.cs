@@ -66,8 +66,8 @@ namespace MayerP4.Controllers
                 await _context.SaveChangesAsync();
 
                 //Send email notification
-                string subject = "New message from " + contact.Name;
-                string message = "<p>You received a new message from " + contact.Name + " " + contact.Email + " on " + DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss") + ":</p><p>" + contact.Text + "</p>";
+                string subject = $"New message from {contact.FirstName} {contact.LastName}";
+                string message = $"<p>You received a new message from {contact.FirstName} {contact.LastName} {contact.Email} on {DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss")}:</p><p>{contact.Text}</p>";
                 Services.Email.SendGmail(subject, message, new string[] { "kyle.mayer.testing.email@gmail.com" }, "kyle.mayer.testing.email@gmail.com");
 
                 return RedirectToAction(nameof(Sent));

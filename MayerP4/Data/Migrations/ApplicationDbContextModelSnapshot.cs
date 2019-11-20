@@ -83,7 +83,21 @@ namespace MayerP4.Data.Migrations
                     b.Property<string>("Email")
                         .IsRequired();
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(20);
+
+                    b.Property<bool>("IsGeneralMessage");
+
+                    b.Property<bool>("IsPhoneApp");
+
+                    b.Property<bool>("IsQuota");
+
+                    b.Property<bool>("IsWebApp");
+
+                    b.Property<bool>("IsWindowsApp");
+
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasMaxLength(20);
 
