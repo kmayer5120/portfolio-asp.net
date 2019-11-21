@@ -3,26 +3,46 @@
     ViewData["Title"] = "Pay with PayPal";
 }
 
-<h2><i class="fab fa-cc-paypal"></i> Make a Payment via PayPal</h2>
 
-<form action="https://www.sandbox.PayPal.com/cgi-bin/webscr" method="post">
+<div class="row">
+    <div class="col-lg-4 well">
+        <h3><i class="fab fa-cc-paypal"></i> Make a Payment via PayPal</h3>
+        <hr />
+        <form action="https://www.sandbox.PayPal.com/cgi-bin/webscr" method="post">
 
-    <input type="hidden" name="cmd" value="_xclick" />
-    <input type="hidden" name="business" value="sb-enbd9609458@business.example.com" />
-    <div class="form-group">
-        <div class="input">
-            <div class="well">
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="sb-enbd9609458@business.example.com" />
+            <div class="input-group">
                 @Html.Label("Payment For:")
-                <br />
-                @Html.TextBox("item_name", " ", new { Class = "form-control" })
-                <hr />
-                @Html.Label("Amount:")
-                <br />
-                @Html.TextBox("amount", 0.0, new { Class = "form-control" })
+                @Html.TextBox("item_name", null, new { placeholder = "Paying for", Class = "form-control" })
             </div>
-        </div>
+            <hr />
+            <div class="input-group">
+                @Html.Label("Amount:")
+                @Html.TextBox("amount", null, new { placeholder = "$0.00", Class = "form-control" })
+            </div>
+            <hr />
+            <input type="submit" class="btn-lg btn-success" value="Make Payment" />
+            <hr />
+            <p>*After clicking Make Payment you will be directed to <a href="https://www.paypal.com/">PayPal</a> to complete your transaction.</p>
+        </form>
     </div>
-    <input type="submit" class="btn-success" value="Make Payment" />
-
-</form>
-
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4 well">
+        <h3>Donations can also be helpful!</h3>
+        <hr />
+        <img src="~/images/paypal_logo.png" class="img-responsive" height="200" width="200" style="margin-left:60px" />
+        <p>By donating you can:</p>
+        <ul>
+            <li>
+                Ensure that Kyle is well caffeinated
+            </li>
+            <li>
+                Help him with hosting fees
+            </li>
+            <li>
+                Support the developer of this website
+            </li>
+        </ul>
+    </div>
+</div>
