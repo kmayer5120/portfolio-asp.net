@@ -1,18 +1,28 @@
 ﻿
 @{
-    ViewData["Title"] = "PayPalBasicPayment";
+    ViewData["Title"] = "Pay with PayPal";
 }
 
-<h2>PayPalBasicPayment</h2>
+<h2><i class="fab fa-cc-paypal"></i> Make a Payment via PayPal</h2>
 
 <form action="https://www.sandbox.PayPal.com/cgi-bin/webscr" method="post">
 
     <input type="hidden" name="cmd" value="_xclick" />
     <input type="hidden" name="business" value="sb-enbd9609458@business.example.com" />
-
-    <input type="hidden" name="item_name" value="My painting" />
-    <input type="hidden" name="amount" value="10.00" />
-    <input type="submit" value="Buy!" />
+    <div class="form-group">
+        <div class="input">
+            <div class="well">
+                @Html.Label("Payment For:")
+                <br />
+                @Html.TextBox("item_name", " ", new { Class = "form-control" })
+                <hr />
+                @Html.Label("Amount:")
+                <br />
+                @Html.TextBox("amount", 0.0, new { Class = "form-control" })
+            </div>
+        </div>
+    </div>
+    <input type="submit" class="btn-success" value="Make Payment" />
 
 </form>
 
