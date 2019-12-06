@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Data\Migrations\20191206201257_change_length_of_names.cs" />
+    <Compile Remove="Data\Migrations\20191206201257_change_length_of_names.Designer.cs" />
+    <Compile Remove="Data\Migrations\20191206201617_name_lengths.cs" />
+    <Compile Remove="Data\Migrations\20191206201617_name_lengths.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />

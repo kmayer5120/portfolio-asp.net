@@ -14,11 +14,13 @@ namespace MayerP4.Models
         public int Id { get; set; }
 
         [Required]
-        [StringLength(20, MinimumLength = 5)]
+        [StringLength(20, MinimumLength = 1)]
+        [Display(Name ="First Name")]
         public string FirstName { get; set; }
 
         [Required]
-        [StringLength(20, MinimumLength = 5)]
+        [StringLength(20, MinimumLength = 1)]
+        [Display(Name ="Last Name")]
         public string LastName { get; set; }
 
         [Required]
@@ -28,12 +30,12 @@ namespace MayerP4.Models
         [Required]
         public string Subject { get; set; }
 
-        [Display(Name = "Comment/Quota Request")]
+        [Display(Name = "Comment/Quote Request")]
         [Required]
         public string Text { get; set; }
 
 
-        [Display(Name = "Quota")]
+        [Display(Name = "Quote")]
         public bool IsQuota
         {
             get { return isQuota; }
