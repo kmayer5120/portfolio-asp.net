@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace MayerP4.Data.Migrations
+namespace MayerP4.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191120020710_Add_Fields_Messages")]
-    partial class Add_Fields_Messages
+    [Migration("20191206222520_complete_revert_of_existing_db")]
+    partial class complete_revert_of_existing_db
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -89,11 +89,7 @@ namespace MayerP4.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(20);
 
-                    b.Property<bool>("IsGeneralMessage");
-
                     b.Property<bool>("IsPhoneApp");
-
-                    b.Property<bool>("IsQuota");
 
                     b.Property<bool>("IsWebApp");
 
@@ -109,9 +105,11 @@ namespace MayerP4.Data.Migrations
                     b.Property<string>("Text")
                         .IsRequired();
 
+                    b.Property<string>("TypeOfRequest");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Messages");
+                    b.ToTable("Contacts");
                 });
 
             modelBuilder.Entity("MayerP4.Models.Skill", b =>

@@ -31,11 +31,8 @@ namespace MayerP4.Models
         [Required]
         public string Text { get; set; }
 
-        [Display(Name = "Quote")]
-        public bool IsQuota { get; set; }
-
-        [Display(Name = "General Message")]
-        public bool IsGeneralMessage { get; set; }
+        [Display(Name = "Type of request")]
+        public string TypeOfRequest { get; set; }
 
         [Display(Name = "Web app")]
         public bool IsWebApp { get; set; }

@@ -4,75 +4,66 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+<h2>Message Details</h2>
 
 <div>
-    <h4>Contact</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
+            @Html.DisplayNameFor(model => model.FirstName):
         </dt>
         <dd>
             @Html.DisplayFor(model => model.FirstName)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.LastName)
+            @Html.DisplayNameFor(model => model.LastName):
         </dt>
         <dd>
             @Html.DisplayFor(model => model.LastName)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.Email):
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Email)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Subject)
+            @Html.DisplayNameFor(model => model.Subject):
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Subject)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.Text)
+            Message:
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Text)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.IsQuota)
+            @Html.DisplayNameFor(model => model.TypeOfRequest)
         </dt>
-        <dd>
-            @Html.DisplayFor(model => model.IsQuota)
-        </dd>
+            @Html.DisplayFor(model => model.TypeOfRequest)
         <dt>
-            @Html.DisplayNameFor(model => model.IsGeneralMessage)
+            App Type:
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.IsGeneralMessage)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.IsWebApp)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.IsWebApp)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.IsPhoneApp)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.IsPhoneApp)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.IsWindowsApp)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.IsWindowsApp)
+            <ul>
+                @if (Model.IsWebApp)
+                {
+                    <li>Web App</li>
+                }
+                @if (Model.IsPhoneApp)
+                {
+                    <li>Phone App</li>
+                }
+                @if (Model.IsWindowsApp)
+                {
+                    <li>Windows App</li>
+                }
+            </ul>
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

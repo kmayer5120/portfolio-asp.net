@@ -239,7 +239,6 @@ C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Ra
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Create.g.cshtml.cs
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Delete.g.cshtml.cs
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Details.g.cshtml.cs
-C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Edit.g.cshtml.cs
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Index.g.cshtml.cs
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Sent.g.cshtml.cs
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Portfolio\Index.g.cshtml.cs
