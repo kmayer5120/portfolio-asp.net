@@ -55,7 +55,9 @@
             @foreach (var education in Model.Educations)
             {
                 <li>
-                    @education
+                    <p>@education.School </p>
+                    <p>@education.Degree </p>
+                    <p> @education.Start.ToShortDateString()  - @education.End.ToShortDateString() </p>
                 </li>
             }
         </ul>
