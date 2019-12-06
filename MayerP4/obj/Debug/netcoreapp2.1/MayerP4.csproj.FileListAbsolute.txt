@@ -262,4 +262,3 @@ C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Ma
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\MayerP4.dll
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\MayerP4.pdb
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\MayerP4.csproj.CopyComplete
-C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\MayerP4.csprojAssemblyReference.cache

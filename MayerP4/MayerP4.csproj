@@ -8,6 +8,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20191206224846_user_roles_reinit.cs" />
     <Compile Remove="Migrations\20191206224846_user_roles_reinit.Designer.cs" />
+    <Compile Remove="Migrations\20191206230917_user_roles_reinit.cs" />
+    <Compile Remove="Migrations\20191206230917_user_roles_reinit.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

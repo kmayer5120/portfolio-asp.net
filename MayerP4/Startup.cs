@@ -84,11 +84,11 @@ namespace MayerP4
             var UserManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
 
             //Check if admin role exists and if not add it.
-            var roleExist = await RoleManager.RoleExistsAsync("Admin");
+            var roleExist = await RoleManager.RoleExistsAsync("admin");
             if (!roleExist)
             {
                 //create the roles and seed them to the database: Question 1  
-                await RoleManager.CreateAsync(new IdentityRole("Admin"));
+                await RoleManager.CreateAsync(new IdentityRole("admin"));
             }
 
             //Check if admin user exists and if not add it
@@ -104,7 +104,7 @@ namespace MayerP4
                 await UserManager.CreateAsync(user, "AdminPassword!1234");
 
                 //Add user to admin role
-                await UserManager.AddToRoleAsync(user, "Admin");
+                await UserManager.AddToRoleAsync(user, "admin");
             }
         }
 

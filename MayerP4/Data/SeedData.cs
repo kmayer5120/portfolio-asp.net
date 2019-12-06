@@ -23,7 +23,7 @@ namespace MayerP4.Data
 
                 var adminID = await CreateUser(serviceProvider, testUserPw, "admin@aserver.net");
                 await CreateRole(serviceProvider, "admin");
-                await AddUserToRole(serviceProvider, adminID, "admin");
+                await AddUserToRole(serviceProvider, adminID, "admin@aserver.net");
 
                 SeedDB(context, adminID);
             }
