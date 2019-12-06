@@ -32,19 +32,13 @@
                 <input asp-for="Subject" class="form-control" />
                 <span asp-validation-for="Subject" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <div class="checkbox">
-                    <label>
-                        <input asp-for="IsQuota" /> @Html.DisplayNameFor(model => model.IsQuota)
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="checkbox">
-                    <label>
-                        <input asp-for="IsGeneralMessage" /> @Html.DisplayNameFor(model => model.IsGeneralMessage)
-                    </label>
-                </div>
+            <div class="form-group well" id="radioButtonGroup">
+                <label asp-for="IsQuota" class="radio-inline">
+                    <input asp-for="IsQuota" value="" type="radio" checked> @Html.DisplayNameFor(model => model.IsQuota)
+                </label>
+                <label asp-for="IsGeneralMessage" class="radio-inline">
+                    <input asp-for="IsGeneralMessage" value="" type="radio">@Html.DisplayNameFor(model => model.IsGeneralMessage)
+                </label>
             </div>
             <div class="form-group">
                 <div class="checkbox">

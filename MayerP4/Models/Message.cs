@@ -8,19 +8,16 @@ namespace MayerP4.Models
 {
     public class Message
     {
-        private bool isQuota;
-        private bool isGeneralMessage;
-
         public int Id { get; set; }
 
         [Required]
         [StringLength(20, MinimumLength = 1)]
-        [Display(Name ="First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         [Required]
         [StringLength(20, MinimumLength = 1)]
-        [Display(Name ="Last Name")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         [Required]
@@ -34,34 +31,11 @@ namespace MayerP4.Models
         [Required]
         public string Text { get; set; }
 
-
         [Display(Name = "Quote")]
-        public bool IsQuota
-        {
-            get { return isQuota; }
-            set
-            {
-                isQuota = value;
-                if (isQuota)
-                {
-                    isGeneralMessage = false;
-                }
-            }
-        }
+        public bool IsQuota { get; set; }
 
         [Display(Name = "General Message")]
-        public bool IsGeneralMessage
-        {
-            get { return isGeneralMessage; }
-            set
-            {
-                isGeneralMessage = value;
-                if (isGeneralMessage)
-                {
-                    isQuota = false;
-                }
-            }
-        }
+        public bool IsGeneralMessage { get; set; }
 
         [Display(Name = "Web app")]
         public bool IsWebApp { get; set; }
