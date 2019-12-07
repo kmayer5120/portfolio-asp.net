@@ -197,7 +197,6 @@ D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\View
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Edit.g.cshtml.cs
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Index.g.cshtml.cs
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Sent.g.cshtml.cs
-C:\Users\kmaye\OneDrive\Documents\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Messages\Edit.g.cshtml.cs
 C:\Users\kmaye\OneDrive\Documents\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Home\PayPalBasicPayment.g.cshtml.cs
 D:\MEGA\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Home\PayPalBasicPayment.g.cshtml.cs
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\bin\Debug\netcoreapp2.1\MayerP4.deps.json
@@ -263,3 +262,4 @@ C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Ma
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\MayerP4.csproj.CopyComplete
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\MayerP4.csprojAssemblyReference.cache
 C:\Users\Kyle\Source\Repos\kmayer5120\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\kmaye\OneDrive\Documents\cis\cis_2284\Programs\MayerP4\MayerP4\obj\Debug\netcoreapp2.1\Razor\Views\Portfolio\Index.g.cshtml.cs

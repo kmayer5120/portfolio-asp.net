@@ -40,11 +40,17 @@
             @Html.DisplayFor(model => model.Text)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.TypeOfRequest)
+            Message Type:
         </dt>
+        <dd>
             @Html.DisplayFor(model => model.TypeOfRequest)
+        </dd>
         <dt>
-            App Type:
+            @if (Model.IsWebApp || Model.IsPhoneApp || Model.IsWindowsApp)
+            {
+
+                @Html.Raw("App Type:")
+            }
         </dt>
         <dd>
             <ul>
